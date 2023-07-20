@@ -55,5 +55,29 @@ namespace crud_back.Controllers
 
             return Ok(discRequest);
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteDisc(int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+
+            var discToDelete = await _discDbContext.Discs.FindAsync(id);
+
+            if (discToDelete == null)
+            {
+                return NotFound();
+            }
+
+            _discDbContext.Discs.Remove(discToDelete);
+            await _discDbContext.SaveChangesAsync();
+
+            return NoContent();
+
+            
+        }
     }
 }
