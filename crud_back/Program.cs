@@ -1,3 +1,6 @@
+using crud_back.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +19,11 @@ builder.Services.AddCors(options =>
         .AllowAnyHeader()
         .AllowAnyMethod();
     });
+});
+
+builder.Services.AddDbContext<DiscDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("crud_backConnectionString"));
 });
 
 var app = builder.Build();
