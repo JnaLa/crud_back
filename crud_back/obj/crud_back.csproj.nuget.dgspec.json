@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Myproject\\Simple_crud\\crud_back\\crud_back\\crud_back.csproj": {}
+    "E:\\Omat ohjelmoinnit\\CRUD_FRONT_AND_BACK\\crud_back\\crud_back\\crud_back.csproj": {}
   },
   "projects": {
-    "D:\\Myproject\\Simple_crud\\crud_back\\crud_back\\crud_back.csproj": {
+    "E:\\Omat ohjelmoinnit\\CRUD_FRONT_AND_BACK\\crud_back\\crud_back\\crud_back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Myproject\\Simple_crud\\crud_back\\crud_back\\crud_back.csproj",
+        "projectUniqueName": "E:\\Omat ohjelmoinnit\\CRUD_FRONT_AND_BACK\\crud_back\\crud_back\\crud_back.csproj",
         "projectName": "crud_back",
-        "projectPath": "D:\\Myproject\\Simple_crud\\crud_back\\crud_back\\crud_back.csproj",
-        "packagesPath": "C:\\Users\\Isomusta\\.nuget\\packages\\",
-        "outputPath": "D:\\Myproject\\Simple_crud\\crud_back\\crud_back\\obj\\",
+        "projectPath": "E:\\Omat ohjelmoinnit\\CRUD_FRONT_AND_BACK\\crud_back\\crud_back\\crud_back.csproj",
+        "packagesPath": "C:\\Users\\joona\\.nuget\\packages\\",
+        "outputPath": "E:\\Omat ohjelmoinnit\\CRUD_FRONT_AND_BACK\\crud_back\\crud_back\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Isomusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\joona\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -46,10 +42,6 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[7.0.9, )"
             },
@@ -79,24 +71,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.8, 7.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.8, 7.0.8]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.8, 7.0.8]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.8, 7.0.8]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -105,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.6.23330.14\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

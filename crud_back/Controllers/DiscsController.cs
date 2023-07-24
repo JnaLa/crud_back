@@ -79,5 +79,27 @@ namespace crud_back.Controllers
 
             
         }
+
+        [HttpPut]
+        public async Task<IActionResult> ToggleDiscInBag([FromBody] Disc discUpdateRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var discInBagUpdate = await _discDbContext.Discs.FindAsync(discUpdateRequest.Id);
+
+            if (discInBagUpdate == null)
+            {
+                return NotFound(); 
+            }
+
+            discInBagUpdate.IsInBag = discUpdateRequest.IsInBag;
+
+            await _discDbContext.SaveChangesAsync();
+
+            return Ok(discInBagUpdate);
+        }
     }
 }

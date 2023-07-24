@@ -20,5 +20,7 @@ namespace crud_back.Models
         public int Turn { get; set; }
         [Required]
         public int Fade { get; set; }
+
+        public bool IsInBag { get; set; } 
     }
 }
