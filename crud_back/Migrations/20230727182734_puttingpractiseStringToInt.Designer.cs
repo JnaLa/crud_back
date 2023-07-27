@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using crud_back.Data;
 
@@ -10,9 +11,11 @@ using crud_back.Data;
 namespace crud_back.Migrations
 {
     [DbContext(typeof(DiscDbContext))]
-    partial class DiscDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230727182734_puttingpractiseStringToInt")]
+    partial class puttingpractiseStringToInt
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
