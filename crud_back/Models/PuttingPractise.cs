@@ -7,16 +7,16 @@ namespace crud_back.Models
         [Key]
         public int Id { get; set; }
         [Required]
-        public string C1Short { get; set; }
+        public int C1Short { get; set; }
         [Required]
-        public string C1Medium { get; set; }
+        public int C1Medium { get; set; }
         [Required]
-        public string C1Long { get; set; }
+        public int C1Long { get; set; }
         [Required]
-        public string C2Short { get; set; }
+        public int C2Short { get; set; }
         [Required]
-        public string C2Medium { get; set; }
+        public int C2Medium { get; set; }
         [Required]
-        public string C2Long { get; set; }
+        public int C2Long { get; set; }
     }
 }
