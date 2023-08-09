@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using crud_back.Data;
 
@@ -10,9 +11,11 @@ using crud_back.Data;
 namespace crud_back.Migrations
 {
     [DbContext(typeof(DiscDbContext))]
-    partial class DiscDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230809110634_added color field to disc model")]
+    partial class addedcolorfieldtodiscmodel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,10 +45,6 @@ namespace crud_back.Migrations
                     b.Property<bool>("IsInBag")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Manufacturer")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -59,6 +58,10 @@ namespace crud_back.Migrations
 
                     b.Property<int>("Turn")
                         .HasColumnType("int");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
