@@ -1,5 +1,6 @@
 ﻿using crud_back.Data;
 using crud_back.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ namespace crud_back.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class DiscsController : ControllerBase
     {
         /*private static List<Disc> _discs = new List<Disc>
@@ -32,6 +34,7 @@ namespace crud_back.Controllers
             _discDbContext = discDbContext;
         }
 
+        [AllowAnonymous]
         [HttpGet]
 
         public async Task<IActionResult> GetAllDiscs()

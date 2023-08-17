@@ -14,5 +14,6 @@ namespace crud_back.Data
 
         public DbSet<Disc> Discs { get; set; }
         public DbSet<PuttingPractise> Practises { get; set;}
+        public DbSet<User> Users { get; set; }
     }
 }
